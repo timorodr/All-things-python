@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core.views import index
-
+ # use the views and urls patterns for end points but also talk to django CRUD capabilities out of box
 urlpatterns = [
     path('', index, name='i'),
     path('admin/', admin.site.urls),
